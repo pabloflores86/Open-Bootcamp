@@ -18,24 +18,31 @@ public class IntroduccionJava {
 
 
 **PARTE 2**
+Clase MAIN
 
 package com.mycompany.introduccionjava;
 
 public class IntroduccionJava {
 
-    public static void main(String[] args) {
+public static void main(String[] args) {
 
-        Coche miCoche = new Coche();
-        miCoche.AgregarPuerta();
-        System.out.println(miCoche.numeroPuertas);
-    }
-public class Coche { 
-    
-    public int numeroPuertas = 0;
+    Coche miCoche = new Coche();
+    miCoche.AgregarPuerta();
+    System.out.println(miCoche.numeroPuertas);
+}
+}
+
+Clase Coche
+
+package com.mycompany.introduccionjava;
+
+public class Coche {
+  
+
+public int numeroPuertas = 0;
+public void AgregarPuerta () { 
+    this.numeroPuertas++;
+}
    
-   public void AgregarPuerta () {
-       this.numeroPuertas++;
-       
-   }
-    
-	  }
+}
+
